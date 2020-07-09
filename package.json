@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/AustinCodingAcademy/JS211_RockPaperScissorsProject#readme",
   "dependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.18.2",
     "htmllint-cli": "github:kevincolten/htmllint-cli",
     "jsdom": "^11.6.2",
     "mocha": "^5.0.0",
