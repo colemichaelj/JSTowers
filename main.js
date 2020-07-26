@@ -83,4 +83,48 @@ const getPrompt = () => {
 }
 
 // once that function returns, then call getprompt() over again
+describe("# what are you testing", function() {
+  it ("legal move, this should work", function() {
+      //setup your world
+      stacks = {
+        a: [4,3,2,1],
+        b: [],
+        c: []
+      };
+      //call the code you are testing
+      assert.equal(isLegal('a','c'), true);
+      //verify your results (using assest.equals, ...)
+  });
+  it ("illegal move, should not work", function() {
+    //setup your world
+    stacks = {
+      a: [4,3,2],
+      b: [1],
+      c: []
+    };
+    //call the code you are testing
+    assert.equal(isLegal('a','b'), false);
+    //verify your results (using assest.equals, ...)
+  });
+});
+describe("# what are you testing", function() {
+  it ("check for win", function() {
+      //setup your world
+      stacks = {
+        a: [],
+        b: [4,3,2,1],
+        c: []
+      };
+      assert.equal(checkForWin(), true);
+      //call the code you are testing
+      //verify your results (using assest.equals, ...)
+      stacks = {
+        a: [1],
+        b: [4,3,2],
+        c: []
+      };
+      assert.equal(checkForWin(), false);
+  });
+});
+console.log(" ----------->>>>>>> Playing the game");
 getPrompt();
